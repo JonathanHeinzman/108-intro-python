@@ -10,15 +10,16 @@ report_card = {
 print(report_card["name"])
 print(report_card["subject"])
 
-report_card
 # Calculate the average
 
-report_card["average"] = "grades"
+average = sum(report_card["grades"]) / len(report_card["grades"]) 
 
-if "grades" >= "90":
+print(average)
+
+if average >= 90:
     print("Excellent!")
 
-elif "grades" >= "70-89":
+elif average >= 70:
     print("Good job!")
 
 else:
